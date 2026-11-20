@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Registration Validation</title><style>
+body{font-family:Arial;padding:25px;background:#f1f5f9}.form-card{max-width:480px;margin:auto;background:white;padding:25px;border-radius:10px}label{display:block;margin-top:13px}input{box-sizing:border-box;width:100%;padding:11px;margin-top:6px;border:1px solid #aaa;border-radius:6px}.error{color:#dc2626;min-height:17px;font-size:14px}button{padding:11px 18px;background:#2563eb;color:white;border:0;border-radius:6px;margin-top:12px}#success{color:#15803d;font-weight:bold}
+</style><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="10.registration-form-validation.js" defer></script></head><body><main class="form-card"><h1>Student Registration</h1><form id="registrationForm" novalidate>
+<label for="name">Name</label><input id="name" type="text"><p class="error" id="nameError"></p>
+<label for="email">Email</label><input id="email" type="email"><p class="error" id="emailError"></p>
+<label for="password">Password</label><input id="password" type="password"><p class="error" id="passwordError"></p>
+<button type="submit">Register</button></form><p id="success" aria-live="polite"></p></main></body></html>
